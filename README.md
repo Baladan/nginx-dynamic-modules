@@ -48,3 +48,6 @@ load_module /folder/location/ngx_http_image_filter_module.so;
 ```
 
 - [x] Restart nginx server. Done!
+
+## Issue Confirmation
+- [x] https://github.com/jeroen/openssl/issues/39
