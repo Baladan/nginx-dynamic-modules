@@ -24,10 +24,10 @@ $ nano /folder/location/nginx-dynamic-modules/image-filter/1.19.8/config
 ngx_addon_name=ngx_http_image_filter_module #change this module name
 
 if test -n "$ngx_module_link"; then
-  ngx_module_type=HTTP
-  ngx_module_name=ngx_http_image_filter_module #change this module name
-  ngx_module_srcs="$ngx_addon_dir/ngx_http_image_filter_module.c" #change this module file
-  . auto/module
+	ngx_module_type=HTTP
+	ngx_module_name=ngx_http_image_filter_module #change this module name
+	ngx_module_srcs="$ngx_addon_dir/ngx_http_image_filter_module.c" #change this module file
+	. auto/module
 else
 	HTTP_MODULES="$HTTP_MODULES ngx_http_image_filter_module" #change this module name
 	NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_http_image_filter_module.c" #change this module file
